@@ -1,0 +1,4 @@
+
+
+print('hhe')
+name = 'uuu'
