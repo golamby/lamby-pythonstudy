@@ -39,7 +39,7 @@ import os
 
 print(os.getcwd())
 
-os.chdir('./data')
+os.chdir('../data')
 print(os.getcwd())
 
 print(os.listdir(os.getcwd()))

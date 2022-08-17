@@ -559,7 +559,7 @@ def auth(source):
             if source == 'file':
                 # 从文件中读取
                 print('从文件中读取')
-                with open('data/a.txt', mode='rt', encoding='utf-8') as f:
+                with open('../data/a.txt', mode='rt', encoding='utf-8') as f:
                     for line in f:
                         username, password = line.strip().split('--')
                         if username_in == username and password_in == password:

@@ -64,7 +64,7 @@ print('x\ryx')
 print('\141\41')
 print('\x40')
 #打开文件
-f = open(r'D:/pythonstudy/pythonbase/data/a.txt',mode ='rt',encoding='utf-8')
+f = open(r'/data/a.txt', mode ='rt', encoding='utf-8')
 print(f)
 
 #文件读写
@@ -75,14 +75,14 @@ print(res)
 
 f.close()
 #为了简化手动关闭文件使用了with语法(上下文管理器)
-with open(r'D:/pythonstudy/pythonbase/data/a.txt', mode='rt',encoding='utf-8') as f :
+with open(r'/data/a.txt', mode='rt', encoding='utf-8') as f :
     res = f.read()
     print(res,type(res))
 
 #t\b
 #rt
 #每次文件指针跳到最开始，
-with open('./data/a.txt',mode = 'rt',encoding='utf-8')as f:
+with open('../data/a.txt', mode ='rt', encoding='utf-8')as f:
     #pass
     # res = f.read()
     # print(res)
@@ -121,7 +121,7 @@ with open('./data/a.txt',mode = 'rt',encoding='utf-8')as f:
 
 #wt
 #r模式在文件不存在时，报错而w模式在文件不存在时会创建一个文件
-with open('./data/c.txt',mode = 'w',encoding='utf-8')as f:
+with open('../data/c.txt', mode ='w', encoding='utf-8')as f:
     #
     f.write('heloo')
     f.write('hexx')
@@ -132,7 +132,7 @@ with open('./data/c.txt',mode = 'w',encoding='utf-8')as f:
 
 #at a模式在open之后文件指针指向末尾
 
-with open('./data/d.txt',mode = 'a',encoding='utf-8')as f:
+with open('../data/d.txt', mode ='a', encoding='utf-8')as f:
     f.write('hello\n')
 
 
@@ -156,7 +156,7 @@ with open('./data/d.txt',mode = 'a',encoding='utf-8')as f:
 
 #+模式
 #r+
-with open('./data/a.txt',mode='r+',encoding='utf-8') as f:
+with open('../data/a.txt', mode='r+', encoding='utf-8') as f:
     # res = f.read() #read读完之后会将文件指针指向末尾
     # print(res)
     f.write('hhh') #使用了+模式之后，就可以使用write()
@@ -178,12 +178,12 @@ with open('./data/a.txt',mode='r+',encoding='utf-8') as f:
 #     print(res)
 #     print(type(res))
 print('-'*50)
-with open('./data/a.txt',mode='rb') as f:
+with open('../data/a.txt', mode='rb') as f:
     res = f.read()
     print(res)
     print(res.decode('utf-8'),type(res.decode('utf-8')))
 
-with open('./data/e.txt','wb')as f:
+with open('../data/e.txt', 'wb')as f:
     f.write('天下'.encode('utf-8'))
 
 
@@ -221,14 +221,14 @@ with open('./data/e.txt','wb')as f:
 #readline 读一行数据
 #readlines 读文件，返回列表，一行一个元素
 
-with open('data/a.txt',mode='rt',encoding='utf-8') as f:
+with open('../data/a.txt', mode='rt', encoding='utf-8') as f:
     while True:
         line = f.readline()
         if not line:
             break
         print(line,end='')
 
-with open('data/a.txt',mode='rt',encoding='utf-8') as f:
+with open('../data/a.txt', mode='rt', encoding='utf-8') as f:
         print('8'*50)
         lines = f.readlines()
         print(lines,end='')
@@ -316,11 +316,11 @@ print(bytes('我',encoding='utf-8'))#encode方法的本质上是调用了这个
 
 import os
 
-with open('data/g.txt',mode='rt',encoding='utf-8') as f,\
+with open('../data/g.txt', mode='rt', encoding='utf-8') as f,\
     open('data/g.txt.swap',mode='wt',encoding='utf-8') as f1:
     for line in f:
         res = line.replace('一会','一年')
         f1.write(res)
-os.remove('data/g.txt')
-os.rename('data/g.txt.swap','data/g.txt')
+os.remove('../data/g.txt')
+os.rename('data/g.txt.swap', '../data/g.txt')
 

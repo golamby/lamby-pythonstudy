@@ -30,7 +30,7 @@ dic = {
 #     f.write(json_res)
 
 
-with open('data/test.json',mode='wt',encoding='utf-8') as f:
+with open('../data/test.json', mode='wt', encoding='utf-8') as f:
     json.dump(dic,f,ensure_ascii=False)
 
 
@@ -40,7 +40,7 @@ with open('data/test.json',mode='wt',encoding='utf-8') as f:
 
 
 
-with open('data/test.json',mode='rt',encoding='utf-8') as f:
+with open('../data/test.json', mode='rt', encoding='utf-8') as f:
     dic = json.load(f)
 
 print(dic,type(dic))
@@ -69,7 +69,7 @@ import pickle
 #     f.write(pickle_res)
 
 
-with open('data/test2.pickle',mode='wb') as f:
+with open('../data/test2.pickle', mode='wb') as f:
     pickle.dump(dic,f,protocol=0)
 
 

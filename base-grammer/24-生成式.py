@@ -58,7 +58,7 @@ print(res.send('1'))
 
 
 
-with open('data/user.log',mode='rt',encoding='utf-8')as f:
+with open('../data/user.log', mode='rt', encoding='utf-8')as f:
     # size = 0
     # for line in f:
     #     size += len(line)
