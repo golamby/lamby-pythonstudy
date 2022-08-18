@@ -1,22 +1,21 @@
-
 name = 'jack'
-print(name,type(name))
+print(name, type(name))
 
-#实质上在赋值过程中调用了str()
+# 实质上在赋值过程中调用了str()
 
-s = str(['a','b'])
-print(s,type(s))
+s = str(['a', 'b'])
+print(s, type(s))
 
-#字符串的内置方法
+# 字符串的内置方法
 
-#索引取值
+# 索引取值
 
 s = 'hello world'
-print(s[2])  #'l'
-print(s[-1]) #'d'负号表示倒数
-#字符串不能根据索引更改值
+print(s[2])  # 'l'
+print(s[-1])  # 'd'负号表示倒数
+# 字符串不能根据索引更改值
 
-#切片，左闭右开，顺序，倒序，步长
+# 切片，左闭右开，顺序，倒序，步长
 
 print(s[0:5])
 print(s[0:])
@@ -25,78 +24,73 @@ res = s[::-1]
 print(res)
 print(s[-1:-3:-1])
 
-#strip去除空格或者其它字符，参数：去除的字符串/字符
+# strip去除空格或者其它字符，参数：去除的字符串/字符
 
 name = '  jack  '
 print(name.strip())
-s= '+-*  sdad  -*/'
+s = '+-*  sdad  -*/'
 print(s.strip('+-*'))
 print(s.strip('+-*/ '))
 print(s.lstrip('+-'))
 
-#split拆分,参数有1.根据什么字符拆分，2.拆分次数
+# split拆分,参数有1.根据什么字符拆分，2.拆分次数
 
 name = '李白 杜甫 王维 李商隐'
 res = name.split()
-print(res,type(res),res[0])
+print(res, type(res), res[0])
 
 name1 = '李白-杜甫-王维-李商隐'
-res = name1.split('-',1)
+res = name1.split('-', 1)
 print(res)
 
+# 循环遍历
 
-#循环遍历
 
-
-#长度len
+# 长度len
 
 s = 'hello world'
-print(len(s),type(len(s)))
+print(len(s), type(len(s)))
 
-
-#成员运算in  not in
+# 成员运算in  not in
 
 print('hello' in 'hellwlehello')
 
-
-#常见方法：
-#1.strip , lstrip, rstrip
+# 常见方法：
+# 1.strip , lstrip, rstrip
 s = '  jack  '
 print(s.strip())
 print(s.lstrip())
 print(s.rstrip())
 
-#2.split, rsplit
+# 2.split, rsplit
 name = 'zhang-san-li-si'
-print(name.split('-',1))
-print(name.rsplit('-',1))
+print(name.split('-', 1))
+print(name.rsplit('-', 1))
 
-
-#3.lower, upper
+# 3.lower, upper
 
 name = 'ZhangSan'
 print(name.lower())
 print(name.upper())
 
-#4.startswith endswith
+# 4.startswith endswith
 
 print('hello'.startswith('he'))
 print('hello'.endswith('lo'))
 
-#5.join
-name = ['李白','杜甫','王维','李商隐']
+# 5.join
+name = ['李白', '杜甫', '王维', '李商隐']
 print('-'.join(name))
 
-#6.replace
+# 6.replace
 
 name = 'zhangsan-xlisi'
-print(name.replace('-x',','))
+print(name.replace('-x', ','))
 
-#7.isdigit
+# 7.isdigit
 
 print('22'.isdigit())
 print('88a'.isdigit())
-
 
 # while True:
 #     num = input('请输入要猜的数字：')
@@ -118,7 +112,7 @@ s = 'hello world'
 print(s.find('wo'))
 print('1aa2'.islower())
 
-#字符串需要了解的操作
+# 字符串需要了解的操作
 # 1 capitalize()  将字符串的第一个字符转换为大写
 # 2 center(width, fillchar) 返回个指定的宽度 width居中的字符串， fillchar为填充的字行默认为空格 。
 # 3 count(str, beg= 0, end=Len(string)) 返回str在string 里面出现的次数，如果beg或者end指定则返回指定
