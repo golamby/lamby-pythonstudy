@@ -8,20 +8,20 @@ from tkinter.tix import Tree
 from turtle import end_fill
 
 num = 0
-l = ['a', 'b', 'c']
+l = ['a', 'bs4解析', 'c']
 while num < len(l):
     print(l[num])
     num += 1
 
 # 可迭代对象，可以转换为迭代器的对象
 # 内置有__iter()__方法
-# l = ['a','b','c']
+# l = ['a','bs4解析','c']
 # l.__iter__()
 
 # str = 'abc'
 # str.__iter__()
 
-# t = ('a','b',1)
+# t = ('a','bs4解析',1)
 # t.__iter__()
 
 # s = {1,2,'a'}
@@ -33,13 +33,13 @@ while num < len(l):
 #     f.__next__()
 
 
-dic = {'a': 1, 'b': 2, 'c': 3}
+dic = {'a': 1, 'bs4解析': 2, 'c': 3}
 print(dic.__iter__())
 
 it = dic.__iter__()
 
 # print(it.__next__()) #a
-# print(it.__next__()) #b
+# print(it.__next__()) #bs4解析
 # print(it.__next__()) #c
 
 # 使用while循环和next方法遍历字典

@@ -3,7 +3,7 @@ print(name, type(name))
 
 # 实质上在赋值过程中调用了str()
 
-s = str(['a', 'b'])
+s = str(['a', 'bs4解析'])
 print(s, type(s))
 
 # 字符串的内置方法

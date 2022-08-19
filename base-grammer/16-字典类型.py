@@ -1,8 +1,8 @@
 from re import T
 
-dic = {'a': 1, 'b': 2, 'c': 3}
+dic = {'a': 1, 'bs4解析': 2, 'c': 3}
 # 实际上是调用了如下函数
-dict({'a': 1, 'b': 2, 'c': 3})
+dict({'a': 1, 'bs4解析': 2, 'c': 3})
 
 print(dic, type(dic))
 
@@ -26,7 +26,7 @@ t = (('name', 'jack'), ['age', 2])
 print(dict(l))
 
 # 添加元素
-dic = {'a': 1, 'b': 2, 'c': 3}
+dic = {'a': 1, 'bs4解析': 2, 'c': 3}
 dic['d'] = 4
 print(dic)
 
@@ -38,7 +38,7 @@ print(dic.get('e'))
 
 del dic['a']
 print(dic)
-dic.pop('b')
+dic.pop('bs4解析')
 print(dic)
 
 print(dic.popitem())
@@ -46,7 +46,7 @@ print(dic.popitem())
 print(len(dic))
 dic.clear()
 
-dic = {'a': 1, 'b': 2, 'c': 3}
+dic = {'a': 1, 'bs4解析': 2, 'c': 3}
 
 print('a' in dic)
 

@@ -39,8 +39,8 @@ print(s4 + s1)
 print('-' * 50)
 
 # python处理字符串前面加上r表示原生字符串（rawstring）
-print('a\nb')
-print(r'a\nb')
+print('a\nbs4解析')
+print(r'a\nbs4解析')
 
 # 列表
 l = ['lucy', 18, 22.2, ['aa', 'bb']]
@@ -78,7 +78,7 @@ print(type(c))
 # 直接引用和间接引用
 
 name = '张大仙'
-l = ['a', 'b', name]  # 直接引用
+l = ['a', 'bs4解析', name]  # 直接引用
 print(l[2])  # 间接引用
 print(id(name))
 print(id(l[2]))
@@ -93,7 +93,7 @@ print(name)
 
 # 循环引用引起的内存泄漏
 
-l1 = ['a', 'b']
+l1 = ['a', 'bs4解析']
 l2 = ['x', 'y']
 l1.append(l2)
 print(id(l1[2]), id(l2))

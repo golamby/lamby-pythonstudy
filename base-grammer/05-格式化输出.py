@@ -18,7 +18,7 @@ print(str)
 str = 'my name is %s'%'jack'
 str = 'my name is %s'%18
 print(str)
-str = 'my name is %s'%['a','b']
+str = 'my name is %s'%['a','bs4解析']
 print(str)
 
 

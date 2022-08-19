@@ -129,7 +129,7 @@ def func1(x, y, **kwargs):
     print(x, y, kwargs)
 
 
-func1(1, 2, a=1, b=2, c=3)  # 1 2 {'a': 1, 'b': 2, 'c': 3}
+func1(1, 2, a=1, b=2, c=3)  # 1 2 {'a': 1, 'bs4解析': 2, 'c': 3}
 
 
 # 在实参前面加参数，可以将列表打散，传给形参
@@ -152,8 +152,8 @@ def func(a, b, c):
     print(a, b, c)
 
 
-func(*{'a': 1, 'b': 2, 'c': 3})
-func(**{'a': 1, 'b': 2, 'c': 3})  # 打散成func(a=1,b=2,c=3)
+func(*{'a': 1, 'bs4解析': 2, 'c': 3})
+func(**{'a': 1, 'bs4解析': 2, 'c': 3})  # 打散成func(a=1,bs4解析=2,c=3)
 
 
 def func1(x, y, **kwargs):
@@ -320,7 +320,7 @@ print(x)
 # def recharge():
 #     print('执行充值功能')
 # fun_dic = {'a':(login,'登录'),
-#            'b':(scan,'扫码支付'),
+#            'bs4解析':(scan,'扫码支付'),
 #            'c':(transfer,'转账'),
 #            'd':(query,'查询'),
 #            'e':(recharge,'充值')}

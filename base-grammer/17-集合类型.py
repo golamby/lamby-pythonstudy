@@ -6,7 +6,7 @@ print(a,type(a))
 
 
 #关系运算 &
-hobbies1 = ['a','b','c','c','e','f']
+hobbies1 = ['a','bs4解析','c','c','e','f']
 hobbies2 = ['a','c','e']
 both_hobbies = []
 for i in hobbies1:
@@ -14,7 +14,7 @@ for i in hobbies1:
         both_hobbies.append(i)
 
 #使用集合
-hobbies1 = {'a','b','c','c','e','f'}
+hobbies1 = {'a','bs4解析','c','c','e','f'}
 hobbies2 = {'a','c','e'}
 both_hobbies = {}
 

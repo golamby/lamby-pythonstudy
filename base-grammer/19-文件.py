@@ -43,7 +43,7 @@ print(res.decode('gbk'))
        读写都是以字符串(unicode)为单位
        encoding = 'utf-8'
        只针对文本文件
-    2.'b'模式
+    2.'bs4解析'模式
         读写是以bytes/二进制为单位
 
 '''
@@ -79,7 +79,7 @@ with open(r'/data/a.txt', mode='rt', encoding='utf-8') as f:
     res = f.read()
     print(res, type(res))
 
-# t\b
+# t\bs4解析
 # rt
 # 每次文件指针跳到最开始，
 with open('../data/a.txt', mode='rt', encoding='utf-8') as f:
@@ -238,7 +238,7 @@ with open('../data/a.txt', mode='rt', encoding='utf-8') as f:
 #         f.writelines([
 #             'aa\n'.encode('utf-8'),
 #             'bb\n'.encode('utf-8'),
-#             b'dd\n',
+#             bs4解析'dd\n',
 #             bytes('啊',encoding='utf-8'),
 #             f'{str(32)}\n'.encode('utf-8')
 #             ])

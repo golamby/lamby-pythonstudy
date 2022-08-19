@@ -8,7 +8,7 @@ print(random.random())
 print(random.uniform(9,10))  #左闭右开,float
 print(random.randint(-100,100)) #左闭右闭 int
 print(random.randrange(1,4))  #左闭右开 int
-l = ['hhh',12,('ss','aa',22),{'a':1,'b':2}]
+l = ['hhh',12,('ss','aa',22),{'a':1,'bs4解析':2}]
 print(random.choice(l)) #随机选一个
 print(random.sample(l,2)) #随机选k个
 
