@@ -18,6 +18,7 @@ def creat_request(start):
 
     return urllib.request.Request(url=url, headers=headers)
 
+
 def get_content(request):
     response = urllib.request.urlopen(request)
     content = response.read().decode('utf-8')
@@ -26,7 +27,7 @@ def get_content(request):
 
 
 def down_load(start, content):
-    with open('../../data/douban' + str(start) + '.json',mode='w',encoding='utf-8') as f:
+    with open('../../data/douban' + str(start) + '.json', mode='w', encoding='utf-8') as f:
         f.write(content)
 
 
@@ -37,4 +38,4 @@ if __name__ == '__main__':
     for start in range(start_page, end_page + 1):
         request = creat_request(start)
         content = get_content(request)
-        down_load(start,content)
+        down_load(start, content)

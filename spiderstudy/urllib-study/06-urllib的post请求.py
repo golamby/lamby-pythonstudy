@@ -13,13 +13,14 @@ data = {
     'kw': 'spider'
 }
 data = urllib.parse.urlencode(data).encode('utf-8')
+print(data)
 
 request = urllib.request.Request(url=url, headers=headers, data=data)
 
 response = urllib.request.urlopen(request)
 
 content = response.read().decode('utf-8')
-
+print(content)
 dic = {}
 dic = json.loads(content)
 

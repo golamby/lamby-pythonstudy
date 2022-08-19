@@ -1,10 +1,11 @@
 import urllib.request
 import urllib.parse
 
-base_url = r'http://www.baidu.com/s?'
+base_url = r'https://www.baidu.com/s?'
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/100.0.4896.127 Safari/537.36 '
 }
 
 # # 将中文编码
@@ -23,7 +24,8 @@ print(url_data)
 
 url = base_url + url_data
 print(url)
-response = urllib.request.urlopen(url=url, headers=headers)
+req = urllib.request.Request(url=url, headers=headers)
+response = urllib.request.urlopen(req)
 content = response.read().decode('utf-8')
 
 print(content)

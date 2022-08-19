@@ -45,6 +45,7 @@ def down_load(html_content):
         pic_dic[f'{page}_{item[1][:-6]}'] = item[0]
     with open(f'../../../data/scene_pic.json', mode='w', encoding='utf-8') as f:
         json.dump(pic_dic, f, ensure_ascii=False)
+        # 这里注意，在进行序列化时，ensure_ascii参数默认为True，意味着将字符默认以ascii编码，我们需要的是utf-8
 
 
 if __name__ == '__main__':

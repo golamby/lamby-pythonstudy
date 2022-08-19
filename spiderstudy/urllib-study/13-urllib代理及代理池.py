@@ -1,6 +1,6 @@
 import urllib.request
 
-base_url = 'http://www.baidu.com'
+base_url = r'https://www.baidu.com'
 
 headers_dic = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
