@@ -12,13 +12,16 @@ data_dic = {
     'kw': 'spider'
 }
 
+proxy = {
+    'http': ''
+}
 # application/x-www-form-urlencoded; charset=UTF-8,决定了参数data/json
 # requests的post方法
 # 不需要定制Request对象
 # 不需要参数的编解码
 # 请求参数是data 或 json
 
-resp = requests.post(url=url, data=data_dic, headers=headers)
+resp = requests.post(url=url, data=data_dic, headers=headers, )  # proxies=proxy
 
 content = resp.json()
 print(content, type(content))

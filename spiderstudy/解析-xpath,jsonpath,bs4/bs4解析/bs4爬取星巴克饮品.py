@@ -42,4 +42,4 @@ for index, ul_ele in enumerate(ul_list):
 print(starBucks)
 
 with open('../../../data/bs4_starBucks.json', mode='w', encoding='utf-8') as f:
-    json.dump(starBucks, f,ensure_ascii=False)
+    json.dump(starBucks, f, ensure_ascii=False)

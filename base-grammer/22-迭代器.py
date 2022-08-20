@@ -121,6 +121,7 @@ def func(x):
 
 
 res = func(10)  # 得到生成器对象
+print(res)
 next(res)
 res.send(100)
 print(next(res))
