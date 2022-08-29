@@ -152,15 +152,15 @@ def func(a, b, c):
     print(a, b, c)
 
 
-func(*{'a': 1, 'bs4解析': 2, 'c': 3})
-func(**{'a': 1, 'bs4解析': 2, 'c': 3})  # 打散成func(a=1,bs4解析=2,c=3)
+# func(*{'a': 1, 'b': 2, 'c': 3})
+func(**{'a': 1, 'b': 2, 'c': 3})  # 打散成func(a=1,bs4解析=2,c=3)
 
 
 def func1(x, y, **kwargs):
     print(x, y, kwargs)
 
 
-func1(**{'x': 1, 'y': 2, 'c': 3, 'd': 4})  # 1 2 {'c': 3, 'd': 4}
+func1(**{'x': 1, 'y': 2,'c': 3, 'd': 4})  # 1 2 {'c': 3, 'd': 4}
 
 
 def func(x, y=2, *args, **kwargs):
