@@ -4,7 +4,10 @@ import socketserver
 # 创建一个套接字
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+# 连接服务端
 clientSocket.connect(('127.0.0.1', 8088))
+
+# 通信循环
 while True:
     msg = input('请输入向服务器发送的内容').strip()
     if msg == 'quit':

@@ -48,7 +48,21 @@
     (?<!exp) 匹配前面不是exp的位置
     注释
     (?#comment) 这种类型的组不对正则表达式的处理产生任何影响，只是为了提供让人阅读注释
-
+    match方法的语法为：re.match(pattern,string,[flags=0])
+        match方法是从头开始匹配的，从中间截取字符串，是无法匹配到的。这也是match方法的局限性。
+        match方法匹配不到结果时，返回的是None，匹配到结果时，返回的是match对象。
+        match方法匹配到结果时，使用match对象的group方法，获取匹配结果
+    search方法的语法为：re.search(pattern,string,[flags=0])
+        search方法是全字符串匹配的，匹配到第一个结果，即返回结果，不再继续。
+        search方法匹配不到结果时，返回的是None，匹配到结果时，返回的是match对象。
+        search方法匹配到结果时，使用match对象的group方法，获取匹配结果。
+    findall方法的语法是：re.findall(pattern, string, flags=0)
+        findall是查找字符串中所有可匹配的，并将匹配结果以列表的形式返回。如果匹配不到，则返回一个空列表。
+    sub(pattern,repl,str[,count])
+        sub方法使用repl替换string中每一个匹配的子串后返回替换后的字符串。
+        count默认为0时，会默认替换全部，指定count值时，则按照指定次数替换。
+        可匹配到时，则返回匹配到的字符串。
+        无法匹配到时，则返回原始的字符串。
 
 
 

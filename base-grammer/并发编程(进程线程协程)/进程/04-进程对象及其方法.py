@@ -13,8 +13,8 @@ def task():
 if __name__ == '__main__':
     p1 = Process(target=task)
     p1.start()
-    p1.terminate()
-    time.sleep(0.5)  # 给is_alive方法反应时间
-    print(p1.is_alive())
+    # p1.terminate()
+    # time.sleep(0.5)  # 给is_alive方法反应时间
+    # print(p1.is_alive())
     time.sleep(1)
     print('主进程 %s over ' % current_process().pid)
